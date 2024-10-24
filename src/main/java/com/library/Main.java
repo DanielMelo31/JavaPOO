@@ -7,6 +7,7 @@ import com.library.model.Student;
 
 public class Main {
     public static void main(String[] args) {
+
         System.out.println("Hello world!");
 
         Library library = new  Library();
@@ -36,6 +37,12 @@ public class Main {
         } catch (SearchException e) {
             System.out.println(e.getMessage());
         }
+        library.loanBook(book, student);
+        System.out.println(book.getAvailability());
 
+        library.returnBook(book, student);
+        System.out.println(book.getAvailability());
+
+        
     }
 }

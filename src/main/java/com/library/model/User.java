@@ -41,4 +41,10 @@ public abstract class User {
         this.role = role;
     }
 
+    public String getFullName() {
+        String fullName = name + " " + lastName;
+
+        return fullName;
+    }
+
 }
